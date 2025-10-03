@@ -46,10 +46,12 @@ class AsistenDosen extends Mahasiswa {
   }
 }
 
+// Abstract class pendaftaran
 abstract class Pendaftaran {
   void daftarMatkul(String matkul);
 }
 
+//MahasiswaAktif implements Pendaftaran
 class MahasiswaAktif extends Mahasiswa implements Pendaftaran {
   List<String> matkulDiambil = [];
 
@@ -65,6 +67,7 @@ class MahasiswaAktif extends Mahasiswa implements Pendaftaran {
           angkatan: angkatan,
         );
 
+//implementasi fungsi daftarMatkul
   @override
   void daftarMatkul(String matkul) {
     matkulDiambil.add(matkul);
