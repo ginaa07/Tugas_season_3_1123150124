@@ -23,7 +23,7 @@ class Mahasiswa {
 }
 
 class AsistenDosen extends Mahasiswa {
-  String mataKuliah; //menyimpan mata kuliah yang diasisten
+  String mataKuliah; //menyimpan mata kuliah yang diasistensi
 
   AsistenDosen({
     required String nama,
@@ -53,7 +53,7 @@ abstract class Pendaftaran {
 
 //MahasiswaAktif implements Pendaftaran.
 class MahasiswaAktif extends Mahasiswa implements Pendaftaran {
-  List<String> matkulDiambil = [];
+  List<String> matkulDiambil = []; //menyimpan daftar mata kuliah yang diambil
 
   MahasiswaAktif({
     required String nama,
