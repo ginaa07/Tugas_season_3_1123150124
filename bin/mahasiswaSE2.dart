@@ -51,7 +51,7 @@ abstract class Pendaftaran {
   void daftarMatkul(String matkul);
 }
 
-//MahasiswaAktif implements Pendaftaran.
+//MahasiswaAktif implements Pendaftaran
 class MahasiswaAktif extends Mahasiswa implements Pendaftaran {
   List<String> matkulDiambil = []; //menyimpan daftar mata kuliah yang diambil
 
@@ -108,5 +108,6 @@ void main() {
   );
   mhsAktif.tampilkanData();
   mhsAktif.daftarMatkul("Mobile Apps");
+  mhsAktif.daftarMatkul("Pemrograman Visual II");
   mhsAktif.daftarMatkul("Pemrograman Objek II");
 }
