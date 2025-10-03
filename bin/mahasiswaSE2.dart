@@ -46,12 +46,12 @@ class AsistenDosen extends Mahasiswa {
   }
 }
 
-// Abstract class pendaftaran
+// Abstract class Pendaftaran.
 abstract class Pendaftaran {
   void daftarMatkul(String matkul);
 }
 
-//MahasiswaAktif implements Pendaftaran
+//MahasiswaAktif implements Pendaftaran.
 class MahasiswaAktif extends Mahasiswa implements Pendaftaran {
   List<String> matkulDiambil = [];
 
@@ -78,7 +78,7 @@ class MahasiswaAktif extends Mahasiswa implements Pendaftaran {
 void main() {
   // Buat objek Mahasiswa
   var mhs = Mahasiswa(
-    nama: "Regina safarina",
+    nama: "Regina Safarina",
     nim: "1123150124",
     jurusan: "Teknik Informatika",
     angkatan: 2023,
@@ -89,7 +89,7 @@ void main() {
 
   // Buat objek AsistenDosen
   var asdos = AsistenDosen(
-    nama: "Ketut Gunawan",
+    nama: "i Ketut Gunawan",
     nim: "1332711002",
     jurusan: "Teknik Informatika",
     angkatan: 2023,
@@ -101,7 +101,7 @@ void main() {
 
   // Buat objek MahasiswaAktif
   var mhsAktif = MahasiswaAktif(
-    nama: "Regina",
+    nama: "Regina safarina",
     nim: "1123150124",
     jurusan: "Teknik informatika",
     angkatan: 2023,
