@@ -3,7 +3,7 @@ class Mahasiswa {
   String nama;
   String nim;
   String jurusan;
-  int angkatan;
+  int angkatan; // menyimpan tahun angkatan masuk
 
   // Constructor
   Mahasiswa({
@@ -23,7 +23,7 @@ class Mahasiswa {
 }
 
 class AsistenDosen extends Mahasiswa {
-  String mataKuliah;
+  String mataKuliah; //menyimpan mata kuliah yang diasisten
 
   AsistenDosen({
     required String nama,
